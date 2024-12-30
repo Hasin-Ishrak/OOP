@@ -1,3 +1,5 @@
+//Find the area of a triangle : 0.5 * base * height
+//Using method for this
 import java.util.Scanner;
 
 public class triangle {
