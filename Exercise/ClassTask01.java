@@ -27,14 +27,11 @@ class orderinput extends order{
         int choice = sc.nextInt();
         System.out.print("Enter quantity: ");
         int quantity = sc.nextInt();
-
-        if (choice == 1) {
-            quantity1 = quantity;
-        } else if (choice == 2) {
-            quantity2 = quantity;
-        } else {
-            System.out.println("Invalid choice!");
-            return;
+        
+        switch (choice) {
+            case 1 -> quantity1 = quantity;
+            case 2 -> quantity2 = quantity;
+            default -> System.out.println("Invalid choice!");
         }
     }
 
